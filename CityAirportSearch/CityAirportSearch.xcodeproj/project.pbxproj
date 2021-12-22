@@ -15,6 +15,11 @@
 		04F270CF277221A100B09FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F270CD277221A100B09FAC /* LaunchScreen.storyboard */; };
 		04F270D9277226E500B09FAC /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F270D8277226E500B09FAC /* SearchCityViewModel.swift */; };
 		4185244C1D1CC908FD8028B2 /* Pods_CityAirportSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C202C84E5B9AE4CE4A6EE512 /* Pods_CityAirportSearch.framework */; };
+		F4D04DE62772BB9400404374 /* SearchCityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DE52772BB9400404374 /* SearchCityCoordinator.swift */; };
+		F4D04DE82772BBBA00404374 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DE72772BBBA00404374 /* Coordinator.swift */; };
+		F4D04DEA2772BD3800404374 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DE92772BD3800404374 /* BaseCoordinator.swift */; };
+		F4D04DED2772BDD400404374 /* Storyboarable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DEC2772BDD400404374 /* Storyboarable.swift */; };
+		F4D04DEF2772C1E100404374 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DEE2772C1E100404374 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		2361EE7FE77C923CC74ADED5 /* Pods-CityAirportSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityAirportSearch.debug.xcconfig"; path = "Target Support Files/Pods-CityAirportSearch/Pods-CityAirportSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		5E4D6D74BF8DFC73FEB64640 /* Pods-CityAirportSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityAirportSearch.release.xcconfig"; path = "Target Support Files/Pods-CityAirportSearch/Pods-CityAirportSearch.release.xcconfig"; sourceTree = "<group>"; };
 		C202C84E5B9AE4CE4A6EE512 /* Pods_CityAirportSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityAirportSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D04DE52772BB9400404374 /* SearchCityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityCoordinator.swift; sourceTree = "<group>"; };
+		F4D04DE72772BBBA00404374 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F4D04DE92772BD3800404374 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		F4D04DEC2772BDD400404374 /* Storyboarable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarable.swift; sourceTree = "<group>"; };
+		F4D04DEE2772C1E100404374 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,8 @@
 		04F270C12772219F00B09FAC /* CityAirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F4D04DEB2772BDA700404374 /* Shared */,
+				F4D04DE42772BB8400404374 /* Coordinator */,
 				04F270D72772265900B09FAC /* ViewModel */,
 				04F270D62772264500B09FAC /* View */,
 				04F270C22772219F00B09FAC /* AppDelegate.swift */,
@@ -99,6 +111,25 @@
 				C202C84E5B9AE4CE4A6EE512 /* Pods_CityAirportSearch.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4D04DE42772BB8400404374 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F4D04DE52772BB9400404374 /* SearchCityCoordinator.swift */,
+				F4D04DE72772BBBA00404374 /* Coordinator.swift */,
+				F4D04DE92772BD3800404374 /* BaseCoordinator.swift */,
+				F4D04DEE2772C1E100404374 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F4D04DEB2772BDA700404374 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F4D04DEC2772BDD400404374 /* Storyboarable.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		FD9C69A3420449163D123D11 /* Pods */ = {
@@ -227,8 +258,13 @@
 			files = (
 				04F270C72772219F00B09FAC /* SearchCityViewController.swift in Sources */,
 				04F270C32772219F00B09FAC /* AppDelegate.swift in Sources */,
+				F4D04DE82772BBBA00404374 /* Coordinator.swift in Sources */,
+				F4D04DE62772BB9400404374 /* SearchCityCoordinator.swift in Sources */,
+				F4D04DEA2772BD3800404374 /* BaseCoordinator.swift in Sources */,
 				04F270C52772219F00B09FAC /* SceneDelegate.swift in Sources */,
+				F4D04DEF2772C1E100404374 /* AppCoordinator.swift in Sources */,
 				04F270D9277226E500B09FAC /* SearchCityViewModel.swift in Sources */,
+				F4D04DED2772BDD400404374 /* Storyboarable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

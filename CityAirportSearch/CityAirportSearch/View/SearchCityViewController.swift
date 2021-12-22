@@ -10,19 +10,24 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class SearchCityViewController: UIViewController {
+class SearchCityViewController: UIViewController, Storyboardable {
 
     @IBOutlet weak var roundedView: UIView!
     @IBOutlet weak var searchTextFieal: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel: SearchCityViewPresentable! 
+    private var viewModel: SearchCityViewPresentable!
+    var viewModelBuilder: SearchCityViewPresentable.ViewModelBuilder!
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel = viewModelBuilder((
+            searchText: searchTextFieal.rx.text.orEmpty.asDriver(), ()
+        ))
     }
 
-
+    
 }
 

@@ -11,9 +11,11 @@ import RxCocoa
 protocol SearchCityViewPresentable {
     
     typealias Input = (
+        // Dùng Driver thích hợp làm việc với ui
         searchText: Driver<String>, ()
     )
     typealias Output = ()
+    typealias ViewModelBuilder = (SearchCityViewPresentable.Input) -> SearchCityViewPresentable
     
     var input: SearchCityViewPresentable.Input {get}
     var output: SearchCityViewPresentable.Output {get}
