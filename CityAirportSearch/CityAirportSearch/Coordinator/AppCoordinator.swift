@@ -6,5 +6,26 @@
 //
 
 import Foundation
+import UIKit
 
 // 29:18 vid 2
+class AppCoordinator: BaseCoordinator {
+    
+    private let window: UIWindow
+    
+    private let navigationController: UINavigationController = {
+        let navigationController = UINavigationController()
+        return navigationController
+    } ()
+    
+    init (window: UIWindow) {
+        self.window = window
+    }
+    
+    override func start() {
+        
+        let searchCityCoordinator = SearchCityCoordinator(navigationController: navigationController)
+        searchCityCoordinator.start()
+        
+    }
+}
