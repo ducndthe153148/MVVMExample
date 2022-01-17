@@ -24,6 +24,8 @@
 		F4D04DEA2772BD3800404374 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DE92772BD3800404374 /* BaseCoordinator.swift */; };
 		F4D04DED2772BDD400404374 /* Storyboarable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DEC2772BDD400404374 /* Storyboarable.swift */; };
 		F4D04DEF2772C1E100404374 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D04DEE2772C1E100404374 /* AppCoordinator.swift */; };
+		F4D33EDF27951DE000788FF8 /* AirportAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D33EDE27951DE000788FF8 /* AirportAPI.swift */; };
+		F4D33EE227951F0500788FF8 /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D33EE127951F0500788FF8 /* AirportModel.swift */; };
 		F4DAE690277D472E005A60EF /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DAE68F277D472E005A60EF /* HttpRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		F4D04DE92772BD3800404374 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		F4D04DEC2772BDD400404374 /* Storyboarable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarable.swift; sourceTree = "<group>"; };
 		F4D04DEE2772C1E100404374 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F4D33EDE27951DE000788FF8 /* AirportAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportAPI.swift; sourceTree = "<group>"; };
+		F4D33EE127951F0500788FF8 /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
 		F4DAE68F277D472E005A60EF /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 		04F270C12772219F00B09FAC /* CityAirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F4D33EE027951EF600788FF8 /* Model */,
 				F4DAE68D277D4702005A60EF /* Service */,
 				F4D04DEB2772BDA700404374 /* Shared */,
 				F4D04DE42772BB8400404374 /* Coordinator */,
@@ -143,11 +148,20 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		F4D33EE027951EF600788FF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4D33EE127951F0500788FF8 /* AirportModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4DAE68D277D4702005A60EF /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				F4DAE68E277D470B005A60EF /* Http */,
 				F4253E302786E88700E5186F /* AirportService.swift */,
+				F4D33EDE27951DE000788FF8 /* AirportAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -297,10 +311,12 @@
 				F4D04DE62772BB9400404374 /* SearchCityCoordinator.swift in Sources */,
 				F4D04DEA2772BD3800404374 /* BaseCoordinator.swift in Sources */,
 				04F270C52772219F00B09FAC /* SceneDelegate.swift in Sources */,
+				F4D33EDF27951DE000788FF8 /* AirportAPI.swift in Sources */,
 				F4D04DEF2772C1E100404374 /* AppCoordinator.swift in Sources */,
 				04F270D9277226E500B09FAC /* SearchCityViewModel.swift in Sources */,
 				F4D04DED2772BDD400404374 /* Storyboarable.swift in Sources */,
 				F4253E312786E88700E5186F /* AirportService.swift in Sources */,
+				F4D33EE227951F0500788FF8 /* AirportModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
